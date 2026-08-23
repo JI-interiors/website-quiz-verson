@@ -1,0 +1,1 @@
+V31: Removed the duplicate top-of-page Find Your Interior Style CTA. The hero CTA DISCOVER YOUR INTERIOR STYLE remains in the hero banner as the replacement for the old Book Free Home Visit hero CTA. Free Home Visit functionality remains elsewhere on the website.

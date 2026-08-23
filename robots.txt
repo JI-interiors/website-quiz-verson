@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /privacy-policy.html
+Disallow: /crm/
+Disallow: /add_locations.py
+Disallow: /V22-FIXES.txt
+Disallow: /DESIGN-IDEAS-SITEMAP.txt
+Sitemap: https://linvainteriors.in/sitemap.xml

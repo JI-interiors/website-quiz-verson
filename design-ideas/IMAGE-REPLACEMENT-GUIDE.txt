@@ -1,0 +1,12 @@
+LINVA INTERIORS DESIGN IDEAS IMAGE GUIDE
+
+Replace the dummy WebP images in /images with real Linva images later.
+The page HTML intentionally references:
+- project-kitchen.webp
+- project-bedroom.webp
+- project-living-room.webp
+
+You can replace these files with same-named images to update many cards at once,
+or we can later assign individual project images to each card.
+
+Do not change the HTML structure unless requested.

@@ -1,0 +1,16 @@
+LINVA INTERIORS V21 — DESIGN IDEAS NAV + WHATSAPP CTA UPDATE
+
+Based directly on V20.
+
+Changes made without changing the core V20 branding, header, footer, mobile bottom navigation, colours or overall card design:
+- Added the 9 Design Ideas room tabs to the top of the Design Ideas hub and every room design page.
+- On the Design Ideas hub, no room is selected by default; all 9 tabs remain neutral.
+- On each room page, only that room's tab is highlighted.
+- Mobile tabs remain visible as a 3 x 3 grid, with wrapped labels and no horizontal scrolling.
+- Removed the large room-page hero/featured-intro blocks so the gallery begins immediately below the room tabs.
+- Added a "WhatsApp for Free Quote" CTA at the bottom of every gallery image.
+- Each gallery CTA opens WhatsApp to +91 8961698488 with a design-specific pre-filled enquiry message.
+- Existing V20 mobile gallery carousel behaviour is retained.
+- Kitchen keeps its existing 10-image gallery; the other room pages keep their existing 6-image galleries.
+
+V20 source ZIP remains untouched as the backup/master source.

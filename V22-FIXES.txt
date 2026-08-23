@@ -1,0 +1,10 @@
+LINVA INTERIORS V22 — NAVIGATION & CLEANUP FIX
+
+Changes in V22:
+1. Fixed the mobile bottom-navigation “Designs” button on the homepage so it opens design-ideas.html instead of scrolling to the homepage #designs section.
+2. Fixed the same “Designs” button on all location SEO pages so it opens the single master Design Ideas page.
+3. The hamburger-menu Design Ideas link and bottom-navigation Design Ideas link now use the same Design Ideas hub.
+4. Verified all 62 HTML pages for broken local file references: none found.
+5. Verified duplicate HTML IDs: none found.
+6. Preserved the existing V20/V21 visual design, gallery, CTA, header, footer and navigation structure.
+7. No new duplicate Design Ideas page or mobile-only Design Ideas layout was added.

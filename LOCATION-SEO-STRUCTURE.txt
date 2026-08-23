@@ -1,0 +1,12 @@
+LINVA INTERIORS LOCATION SEO STRUCTURE
+
+All 51 location links are placed in the FOOTER only. They are not in the top navigation and not listed in the main homepage body.
+
+Each location link opens its own crawlable location homepage:
+/locations/<location-slug>.html
+
+The location pages use the same Linva home design but have a location-specific title, meta description, SEO section and form service-area value.
+
+The homepage and Design Ideas pages retain the location links only in their footer.
+
+Sitemap: /sitemap.xml

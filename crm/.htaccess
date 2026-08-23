@@ -1,0 +1,5 @@
+# Keep the private CRM out of search indexes.
+# NOTE: This is indexing protection, not authentication. Use server-side auth before production use.
+<IfModule mod_headers.c>
+  Header always set X-Robots-Tag "noindex, nofollow, noarchive, nosnippet"
+</IfModule>

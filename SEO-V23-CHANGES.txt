@@ -1,0 +1,22 @@
+LINVA INTERIORS V23 SEO UPGRADE
+
+Implemented:
+- Search-friendly unique titles and meta descriptions
+- Canonical URLs on homepage, design pages and location pages
+- Robots meta directives allowing normal crawling/indexing
+- Open Graph and Twitter metadata
+- Explicit location-focused H1 headings
+- Improved design-page H1 headings
+- Visible breadcrumbs + BreadcrumbList structured data
+- ProfessionalService/WebSite structured data on homepage
+- Service structured data on location pages
+- CollectionPage structured data on design idea pages
+- Crawlable robots.txt with sitemap declaration
+- Regenerated sitemap covering 62 public URLs
+- Location-page SEO copy strengthened with the exact service area
+- Added a concise crawl-friendly homepage service/location statement
+
+Important:
+- No page was intentionally set to noindex.
+- Private/build notes are excluded from robots crawling.
+- Existing design, navigation and forms were preserved as much as possible.
