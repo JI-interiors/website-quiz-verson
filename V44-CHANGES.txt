@@ -1,0 +1,24 @@
+Linva Interiors V44 — Approved SEO, Local SEO, Calculator and Trust Cleanup
+
+BASE: website quiz verson.zip supplied by user.
+
+Approved changes only:
+- Removed unsupported placeholder social-proof claims from public pages.
+- Removed homepage design-discovery quiz CTA from the hero.
+- Preserved Free Home Visit in mobile/hamburger navigation.
+- Reworked homepage What We Do into an expandable service section with no broken service links.
+- Added the provided Shibpur/Howrah address to relevant contact/footer areas and business schema.
+- Replaced misleading project/testimonial wording with honest design-reference/approach wording.
+- Reduced location pages to 12 selected pages targeting Howrah, Kolkata and major nearby areas.
+- Rewrote the 12 retained location pages with unique, location-specific content.
+- Added canonical/meta/schema/breadcrumbs to retained location pages.
+- Removed deleted location pages from sitemap and footer; no blanket redirects were created.
+- Added a dedicated interactive Budget Calculator page.
+- Calculator asks name + phone first, then the exact approved questions; optional questions can be skipped.
+- Calculator result shows the customer's selections and an indicative estimate.
+- Estimate excludes structural modification, plumbing and flooring.
+- Calculator saves leads to the existing localStorage CRM with source Website Budget Calculator.
+- Added tappable Budget Calculator CTA to relevant public pages while preserving Free Home Visit.
+- Updated CRM source filter for Website Budget Calculator.
+- No unrelated visual redesign was intentionally made.
+- Demo calculation rates remain temporary until user supplies actual rates.
