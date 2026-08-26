@@ -1,0 +1,26 @@
+.design-hub-hero{background:linear-gradient(145deg,#4b173f,#74124f);color:#fff;padding:42px 18px 36px}
+.design-hub-hero h1{font-size:38px;line-height:1.03;margin:8px 0 12px}
+.design-hub-hero h1 span{color:#e2c37e}
+.design-hub-hero p{color:#eadfe5;font-size:14px;margin-bottom:20px}
+.breadcrumb{font-size:11px;color:#cdbcc7;margin-bottom:18px}
+.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.category-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 7px 20px rgba(53,17,45,.08)}
+.category-card img{width:100%;aspect-ratio:1.15/1;object-fit:cover}
+.category-card div{padding:13px}.category-card h3{font-size:15px;margin:0 0 3px}.category-card p{font-size:11px;color:#756d74;margin:0}
+
+.kitchen-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kitchen-gallery-card{background:#fff;border-radius:13px;overflow:hidden;box-shadow:var(--shadow)}
+.kitchen-gallery-card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.kitchen-gallery-card div{padding:12px 13px 14px}
+.kitchen-gallery-card h3{font-size:15px;margin:0 0 4px}
+.kitchen-gallery-card p{font-size:11px;color:var(--muted);margin:0}
+@media(min-width:760px){.kitchen-gallery{grid-template-columns:repeat(3,1fr);gap:16px}.kitchen-gallery-card div{padding:14px}}
+
+.idea-row{display:flex;overflow:auto;gap:12px;scrollbar-width:none}.idea-row::-webkit-scrollbar{display:none}
+.idea-card{flex:0 0 76%;background:#fff;border-radius:13px;overflow:hidden;box-shadow:var(--shadow)}
+.idea-card img{width:100%;aspect-ratio:4/3;object-fit:cover}.idea-card div{padding:14px}.idea-card h3{font-size:17px;margin:0 0 5px}.idea-card p{font-size:12px;color:var(--muted);margin:0}
+@media(min-width:760px){
+ .design-hub-hero{padding:70px max(7vw,32px)}.design-hub-hero h1{font-size:62px;max-width:800px}
+ .design-hub-hero p{font-size:17px;max-width:650px}.category-grid{grid-template-columns:repeat(4,1fr);gap:16px}
+ .idea-row{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}.idea-card{width:auto}
+}

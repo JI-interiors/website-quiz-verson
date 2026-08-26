@@ -1,8 +1,0 @@
-V29 Quiz UX fixes
-- Quiz question screen is locked to one viewport with no page scrolling.
-- Removed oversized “Find Your Interior Style” heading from the active quiz question screen.
-- Added explicit “Skip this question” control. Skipped answers are omitted from the final profile.
-- Continue is always visible within the same viewport.
-- Intro lead capture remains compact.
-- Removed scrollTo calls from quiz transitions.
-- Preserved hero quiz CTA and Free Home Visit elsewhere.

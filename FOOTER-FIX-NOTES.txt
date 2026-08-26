@@ -1,8 +1,0 @@
-Footer/contact fixes applied:
-1. Replaced the white-background footer logo with a transparent SVG footer logo.
-2. Removed the footer logo invert filter.
-3. Contact pills now force readable burgundy text/icons.
-4. Replaced the placeholder ◉ WhatsApp symbol with an actual WhatsApp-style SVG icon.
-5. Floating WhatsApp button now uses the same icon.
-6. WhatsApp contact links remain connected to +91 8961698488.
-7. Company email remains support@linvainteriors.in.

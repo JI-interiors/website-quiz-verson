@@ -1,8 +1,0 @@
-V44 validation
-Location pages: 12
-Location slugs: andul-road, bally, behala, domjur, howrah, kolkata, liluah, new-town, rajarhat, salt-lake, santragachi, shibpur
-Sitemap URLs: 16
-Placeholder claim matches: 0
-Broken local HTML links/assets: 0
-Calculator page: present
-No broken local HTML links/assets detected.
