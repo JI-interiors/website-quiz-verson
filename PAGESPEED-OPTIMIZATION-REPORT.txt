@@ -1,0 +1,48 @@
+Linva Interiors — PageSpeed Optimization Report
+Version: V62
+Base: V61
+
+Implemented in website files
+1. Image delivery
+- Added responsive WebP hero candidates at 800px and 1200px widths.
+- Hero image is not lazy-loaded and uses fetchpriority=high.
+- Hero preload now includes responsive image candidates.
+- Replaced non-LCP gallery/category images with 900px WebP variants.
+- Added width/height attributes to all static public images to preserve layout stability.
+- Added width/height to dynamic Design Discovery Quiz images.
+- Kept below-the-fold content images lazy-loaded.
+- Fixed all local image references and verified zero missing local assets.
+
+2. JavaScript/rendering
+- Existing site scripts remain deferred where safe.
+- GA4/analytics script remains deferred.
+- GA4 loading is now triggered after the window load event, so it does not compete with initial rendering; conversion events can still load it immediately when a user interacts.
+- No lead, CRM, consent or navigation scripts were removed.
+
+3. Cache lifetimes
+- No fake Cache-Control meta tags or unsupported hosting workaround was added.
+- The site is hosted on GitHub Pages, where response cache headers are controlled by the hosting platform rather than HTML/CSS/JS files.
+- If a CDN/reverse proxy such as Cloudflare is later placed in front of the site, configure long cache lifetimes for versioned static assets and short/no-cache for HTML there.
+
+4. Network dependency / third-party requests
+- No unnecessary third-party libraries were added.
+- Google Analytics was retained as required.
+- Supabase CRM dependency was retained because it is required for CRM/lead functionality.
+
+Validation
+- Public HTML pages checked: 27
+- Missing local assets: 0
+- Broken local HTML links: 0
+- Missing image dimensions: 0
+- Malformed image attributes: 0
+- JavaScript syntax checks passed for analytics.js, script.js and supabase-client.js.
+
+PageSpeed metrics
+The original user-supplied mobile baseline was:
+Performance 97/100
+FCP 0.904 s
+LCP 1.985 s
+TBT 0 ms
+CLS 0.00
+
+A fresh PageSpeed Insights run must be performed against the deployed V62 URL to obtain authoritative post-change metrics. No new score or savings value is invented here.

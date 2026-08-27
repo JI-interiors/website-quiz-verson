@@ -6,7 +6,7 @@
 .category-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .category-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 7px 20px rgba(53,17,45,.08)}
 .category-card img{width:100%;aspect-ratio:1.15/1;object-fit:cover}
-.category-card div{padding:13px}.category-card h3{font-size:15px;margin:0 0 3px}.category-card p{font-size:11px;color:#756d74;margin:0}
+.category-card div{padding:13px}.category-card h3{font-size:15px;margin:0 0 3px}.category-card p{font-size:11px;color:#625b61;margin:0}
 
 .kitchen-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .kitchen-gallery-card{background:#fff;border-radius:13px;overflow:hidden;box-shadow:var(--shadow)}
