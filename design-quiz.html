@@ -1,18 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Design Discovery Quiz | Linva Interiors</title>
-<meta name="description" content="Take the Linva Interiors Design Discovery Quiz and share your interior preferences with our design team.">
-<link rel="canonical" href="https://linvainteriors.in/design-quiz.html">
-<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="design-quiz.css">
+<meta content="Take the Linva Interiors Design Discovery Quiz and share your interior preferences with our design team." name="description"/>
+<link href="https://linvainteriors.in/design-quiz.html" rel="canonical"/>
+<link href="style.css" rel="stylesheet"/><link href="design-quiz.css" rel="stylesheet"/>
 </head><body>
-<div class="quiz-page"><header class="quiz-top"><a href="index.html" aria-label="Linva Interiors home"><img src="images/linva-interiors-logo.svg" alt="Linva Interiors" width="500" height="140"></a><a class="quiz-back" href="index.html">Back to Linva Interiors</a></header>
+<div class="quiz-page"><header class="quiz-top"><a aria-label="Linva Interiors home" href="index.html"><img alt="Linva Interiors" height="140" src="images/linva-interiors-logo.svg" width="500"/></a><a class="quiz-back" href="index.html">Back to Linva Interiors</a></header>
 <main class="quiz-wrap">
-<section id="intro" class="intro"><div class="eyebrow">LINVA DESIGN DISCOVERY</div><h1>Interior Design Style Quiz</h1><div class="intro-compact"><div class="intro-label">START YOUR DESIGN JOURNEY</div><p class="intro-copy">Tell us who you are and we’ll begin.</p></div><div class="start-card"><div class="fields"><label>Your Name<input id="leadName" autocomplete="name" placeholder="Enter your name"></label><label>WhatsApp Number<input id="leadPhone" autocomplete="tel" inputmode="tel" placeholder="10-digit mobile number"></label></div><label class="quiz-consent"><input id="quizConsent" type="checkbox" required> <span>I agree to Linva Interiors collecting and using the information I provide to respond to my enquiry. See the <a href="privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a>.</span></label><button type="button" class="start-btn" id="start">Begin My Design Journey →</button><div class="small-note">Your details and preferences are used by Linva Interiors to respond to your enquiry. By continuing, you agree to our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</div><div id="startError" class="error"></div></div></section>
-<section id="quiz" class="question-card hidden"><div class="progress-head"><span id="stepLabel">Question 1</span><span id="stepCount">1 / 10</span></div><div class="progress"><span id="progress"></span></div><div class="eyebrow" id="eyebrow">DESIGN DISCOVERY</div><h2 id="qTitle"></h2><div class="hint" id="qHint"></div><div class="options" id="options"></div><div class="quiz-actions"><button type="button" class="skip-btn" id="skip">Skip this question</button><button type="button" class="next-btn" id="next">Continue →</button></div></section>
-<section id="result" class="result-card hidden"><div class="eyebrow">YOUR LINVA DESIGN PROFILE</div><h2 id="resultTitle">Modern Warm</h2><p class="result-intro" id="resultText"></p><div class="profile" id="profile"></div><a class="wa" id="wa" target="_blank" rel="noopener">Talk to a Linva Designer on WhatsApp →</a><br><button class="restart" id="restart">Retake the quiz</button></section>
+<section class="intro" id="intro"><div class="eyebrow">LINVA DESIGN DISCOVERY</div><h1>Interior Design Style Quiz</h1><div class="intro-compact"><div class="intro-label">START YOUR DESIGN JOURNEY</div><p class="intro-copy">Tell us who you are and we’ll begin.</p></div><div class="start-card"><div class="fields"><label>Your Name<input autocomplete="name" id="leadName" placeholder="Enter your name"/></label><label>WhatsApp Number<input autocomplete="tel" id="leadPhone" inputmode="tel" placeholder="10-digit mobile number"/></label></div><label class="quiz-consent"><input id="quizConsent" required="" type="checkbox"/> <span>I agree to Linva Interiors collecting and using the information I provide to respond to my enquiry. See the <a href="privacy-policy.html" rel="noopener" target="_blank">Privacy Policy</a>.</span></label><button class="start-btn" id="start" type="button">Begin My Design Journey →</button><div class="small-note">Your details and preferences are used by Linva Interiors to respond to your enquiry. By continuing, you agree to our <a href="privacy-policy.html" target="_blank">Privacy Policy</a>.</div><div class="error" id="startError"></div></div></section>
+<section class="question-card hidden" id="quiz"><div class="progress-head"><span id="stepLabel">Question 1</span><span id="stepCount">1 / 10</span></div><div class="progress"><span id="progress"></span></div><div class="eyebrow" id="eyebrow">DESIGN DISCOVERY</div><h2 id="qTitle"></h2><div class="hint" id="qHint"></div><div class="options" id="options"></div><div class="quiz-actions"><button class="skip-btn" id="skip" type="button">Skip this question</button><button class="next-btn" id="next" type="button">Continue →</button></div></section>
+<section class="result-card hidden" id="result"><div class="eyebrow">YOUR LINVA DESIGN PROFILE</div><h2 id="resultTitle">Modern Warm</h2><p class="result-intro" id="resultText"></p><div class="profile" id="profile"></div><a class="wa" id="wa" rel="noopener" target="_blank">Talk to a Linva Designer on WhatsApp →</a><br/><button class="restart" id="restart">Retake the quiz</button></section>
 </main></div>
-<script src="supabase-client.js"></script><script>
+<script>
+async function ensureLinvaCRM(){
+  if(window.LinvaCRM) return window.LinvaCRM;
+  if(!window.__linvaCRMLoadPromise){
+    window.__linvaCRMLoadPromise=new Promise((resolve,reject)=>{
+      const s=document.createElement('script'); s.src='supabase-client.js'; s.async=true;
+      s.onload=()=>resolve(window.LinvaCRM); s.onerror=()=>reject(new Error('CRM client could not be loaded'));
+      document.head.appendChild(s);
+    });
+  }
+  return window.__linvaCRMLoadPromise;
+}
+
 const img=(name)=>'images/quiz/'+name;
 const questions=[
 {id:'project',title:'What are you designing?',hint:'Choose what you want Linva to help you create.',opts:[['home','Complete Home','A full-home interior journey',img('home-luxury.webp')],['living','Living Room','A welcoming living space',img('living-modern.webp')],['kitchen','Kitchen','Modular kitchen & storage',img('kitchen-warm.webp')],['bedroom','Bedroom','Bedroom, wardrobe & storage',img('bedroom-warm.webp')]]},
@@ -46,10 +59,10 @@ function finish(){
  $('profile').innerHTML=Object.entries(labels).filter(([k])=>val[k]).map(([k,l])=>`<div><small>${l}</small><b>${val[k]}</b></div>`).join('');
  const msg=encodeURIComponent(`Hi Linva Interiors, I completed the Design Discovery Quiz. My name is ${lead.name}. My design profile is ${style}. I would like to discuss my interior project.`);$('wa').href='https://wa.me/918961698488?text='+msg;
  const priority=(answers.budget==='40plus'||answers.budget==='25to40'||answers.timeline==='now')?'high':'medium';
- window.LinvaCRM.insertLead({source:'Design Discovery Quiz',name:lead.name,phone:lead.phone,requirement:'Design Discovery Quiz',message:'Completed design discovery quiz. Design profile: '+style,priority,status:'pending',followup_at:new Date(Date.now()+86400000).toISOString(),consent_at:new Date().toISOString(),profile:{answers,display:val,designProfile:style}}).then(()=>{if(window.LinvaAnalytics) window.LinvaAnalytics.event('design_quiz_complete',{lead_source:'Design Discovery Quiz',design_profile:style});}).catch((error)=>{console.error(error);let note=document.createElement('p');note.className='quiz-save-error';note.setAttribute('role','alert');note.textContent='Your result is ready. We could not save the enquiry right now. Please use WhatsApp to contact us.';$('result').appendChild(note);});
+ ensureLinvaCRM().then(()=>window.LinvaCRM.insertLead({source:'Design Discovery Quiz',name:lead.name,phone:lead.phone,requirement:'Design Discovery Quiz',message:'Completed design discovery quiz. Design profile: '+style,priority,status:'pending',followup_at:new Date(Date.now()+86400000).toISOString(),consent_at:new Date().toISOString(),profile:{answers,display:val,designProfile:style}})).then(()=>{if(window.LinvaAnalytics) window.LinvaAnalytics.event('design_quiz_complete',{lead_source:'Design Discovery Quiz',design_profile:style});}).catch((error)=>{console.error(error);let note=document.createElement('p');note.className='quiz-save-error';note.setAttribute('role','alert');note.textContent='Your result is ready. We could not save the enquiry right now. Please use WhatsApp to contact us.';$('result').appendChild(note);});
 }
 $('restart').onclick=()=>{i=0;answers={};lead={};$('result').classList.add('hidden');$('intro').classList.remove('hidden');$('startError').textContent='';$('leadPhone').value='';$('leadName').focus();};
 $('leadPhone').addEventListener('input',()=>{$('leadPhone').value=$('leadPhone').value.replace(/\D/g,'').slice(0,10)});
 $('leadName').addEventListener('keydown',e=>{if(e.key==='Enter'){$('leadPhone').focus()}});
 $('leadPhone').addEventListener('keydown',e=>{if(e.key==='Enter')$('start').click()});
-</script><script src="analytics.js" defer></script></body></html>
+</script><script defer="" src="analytics.js"></script></body></html>
