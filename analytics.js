@@ -40,9 +40,6 @@
 
   window.LinvaAnalytics = Object.freeze({event});
 
-  // Load GA4 after the page has finished loading so analytics does not block initial rendering.
-  window.addEventListener('load', loadGtag, {once:true});
-
   document.addEventListener('click', (e) => {
     const link = e.target.closest && e.target.closest('a[href*="wa.me/"], a[href*="whatsapp"]');
     if (link) event('whatsapp_click', {link_text:(link.textContent||'').trim().slice(0,80)});

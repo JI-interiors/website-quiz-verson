@@ -1,5 +1,5 @@
 :root{
-  --pink:#c90055;--burgundy:#4b173f;--gold:#c8a05a;--ink:#251f24;--muted:#625b61;
+  --pink:#c90055;--burgundy:#4b173f;--gold:#c8a05a;--ink:#251f24;--muted:#756d74;
   --cream:#fbf8f4;--line:#e9e0e5;--white:#fff;--shadow:0 14px 36px rgba(53,17,45,.10)
 }
 *{box-sizing:border-box}
@@ -173,7 +173,7 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
 .footer-location-column ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .footer-location-column a{display:block;color:#cfc3ca;font-size:11px;line-height:1.35;text-decoration:none}
 .footer-location-column a:hover{color:#fff;text-decoration:underline;text-underline-offset:3px}
-.footer-bottom{max-width:1280px;margin:38px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.09);display:flex;justify-content:space-between;gap:20px;color:#aaa0a7;font-size:10px}
+.footer-bottom{max-width:1280px;margin:38px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.09);display:flex;justify-content:space-between;gap:20px;color:#897c85;font-size:10px}
 .footer-bottom div{display:flex;gap:18px}
 .footer-bottom a{color:#aaa0a7;text-decoration:none}
 .footer-bottom a:hover{color:#fff}
@@ -729,33 +729,3 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
 .service-accordion{background:#fff;border-radius:14px;overflow:hidden}.service-accordion details{border-bottom:1px solid var(--line)}.service-accordion details:last-child{border-bottom:0}.service-accordion summary{display:grid;grid-template-columns:38px 1fr 24px;align-items:center;padding:17px;list-style:none;cursor:pointer;font-weight:800}.service-accordion summary::-webkit-details-marker{display:none}.service-accordion summary b{font-size:10px;color:var(--pink)}.service-accordion summary i{font-style:normal;color:var(--pink);transition:transform .18s}.service-accordion details[open] summary i{transform:rotate(45deg)}.service-accordion .service-detail{padding:0 17px 18px 55px;color:var(--muted);font-size:13px;line-height:1.65}.trust-note{background:var(--burgundy);color:#fff;padding:26px 20px}.trust-note h3{margin:0 0 7px}.trust-note p{margin:0;color:#eadfe5;font-size:13px;line-height:1.6}.project-reference-note{font-size:11px;color:var(--muted);margin:12px 0 0;line-height:1.5}.address-block{margin-top:18px;padding:14px;border:1px solid rgba(255,255,255,.16);border-radius:10px;color:#eadfe5;font-size:12px;line-height:1.55}.address-block strong{display:block;color:#fff;margin-bottom:3px}.calculator-shell{max-width:760px;margin:0 auto}.calculator-card{background:#fff;border:1px solid #e7dfe4;border-radius:18px;padding:22px;box-shadow:0 16px 42px rgba(39,10,31,.10)}.calc-step{display:none}.calc-step.active{display:block}.calc-progress{height:5px;background:#eee4ea;border-radius:99px;overflow:hidden;margin:0 0 20px}.calc-progress span{display:block;height:100%;background:var(--pink);transition:width .2s}.calc-label{font-size:12px;font-weight:800;display:block;margin:0 0 8px}.calc-input,.calc-select{width:100%;height:48px;border:1px solid #ddd3db;border-radius:9px;padding:0 13px;font-size:15px;background:#fff;color:var(--ink);box-sizing:border-box}.calc-question{font-size:24px;line-height:1.15;margin:0 0 18px}.calc-help{font-size:12px;color:var(--muted);margin:8px 0 0;line-height:1.5}.calc-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.calc-option{border:1px solid #ddd3db;border-radius:10px;background:#fff;padding:14px 12px;text-align:left;font-weight:750;cursor:pointer}.calc-option.selected{border-color:var(--pink);box-shadow:0 0 0 2px rgba(201,0,85,.10)}.calc-number{display:flex;align-items:center;justify-content:center;gap:16px}.calc-number button{width:48px;height:48px;border:1px solid #ddd3db;border-radius:10px;background:#fff;font-size:24px;cursor:pointer}.calc-number input{width:90px;text-align:center}.calc-actions{display:flex;gap:10px;justify-content:space-between;margin-top:22px}.calc-actions button{min-height:46px;border-radius:9px;padding:0 16px;border:1px solid #ddd3db;background:#fff;font-weight:800;cursor:pointer}.calc-actions .calc-next{background:var(--pink);border-color:var(--pink);color:#fff;flex:1}.calc-actions .calc-skip{color:#6d6169}.calc-summary{display:grid;gap:8px;margin:18px 0}.calc-summary-row{display:flex;justify-content:space-between;gap:15px;padding:10px 0;border-bottom:1px solid #eee6eb;font-size:13px}.calc-summary-row span:first-child{color:var(--muted)}.calc-summary-row b{text-align:right}.calc-result{background:#f7eff3;border-radius:13px;padding:18px;text-align:center;margin-top:18px}.calc-result small{display:block;color:var(--muted);font-weight:700}.calc-result strong{display:block;font-size:30px;color:var(--burgundy);margin-top:4px}.calc-disclaimer{font-size:11px;line-height:1.55;color:var(--muted);margin-top:12px}.calc-success{padding:25px;text-align:center}.calc-success h2{margin:0 0 8px}.calc-error{color:#b42318;font-size:12px;margin-top:7px}.calc-consent{display:flex;gap:9px;align-items:flex-start;font-size:11px;line-height:1.45;color:var(--muted);margin-top:14px}.calc-consent input{margin-top:2px}.calc-hidden{display:none!important}@media(max-width:560px){.calc-options{grid-template-columns:1fr}.calc-question{font-size:21px}.calculator-card{padding:17px}.calc-actions{flex-wrap:wrap}.calc-actions .calc-next{order:-1;width:100%}}
 
 .nav-quiz-link{font-weight:800!important;color:#c9005b!important}
-
-/* Accessibility: preserve visual size while providing comfortable mobile hit areas. */
-@media (max-width: 700px){
-  .social-links a,
-  .social-icon,
-  .header-icon-btn,
-  .menu-toggle,
-  .close-btn,
-  .carousel-btn,
-  .floating-wa,
-  .floating-call{
-    min-width:44px;
-    min-height:44px;
-  }
-  .social-links a{display:inline-flex;align-items:center;justify-content:center}
-}
-
-/* Site-wide mobile accessibility: comfortable hit areas without changing icon artwork. */
-@media (max-width:700px){
-  .menu-btn{min-width:44px;min-height:44px}
-  .linva-social-links a{width:44px;height:44px}
-  .bottom-nav a{min-height:44px}
-  .footer-phone,.footer-whatsapp-link,.footer-cta,.linva-footer-privacy{min-height:44px;display:inline-flex;align-items:center}
-  .whatsapp-float{min-width:44px;min-height:44px}
-}
-
-/* Site-wide touch target reinforcement for calculator and quiz controls. */
-@media (max-width:700px){
-  .calc-skip,.calc-next,.start-btn,.next-btn,.skip-btn,.restart{min-height:44px}
-}

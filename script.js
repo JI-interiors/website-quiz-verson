@@ -149,13 +149,5 @@
       setActive(0);
     });
   };
-  // Gallery controls are non-critical. Initialize them after the page has loaded
-  // so mobile initial rendering/LCP is not competing with carousel setup.
-  const scheduleCarouselInit = () => {
-    const run = () => initDesignCarousels();
-    if ('requestIdleCallback' in window) window.requestIdleCallback(run, {timeout: 2000});
-    else window.setTimeout(run, 250);
-  };
-  if (document.readyState === 'complete') scheduleCarouselInit();
-  else window.addEventListener('load', scheduleCarouselInit, {once:true});
+  initDesignCarousels();
 })();
