@@ -30,12 +30,8 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
 .trust-strip div{text-align:center;border-right:1px solid rgba(255,255,255,.18)}
 .trust-strip div:last-child{border:0}.trust-strip strong{display:block;font-size:20px}.trust-strip span{font-size:10px;opacity:.8}
 .section{padding:46px 18px}.section-head{margin-bottom:22px}.section-head h2,.seo h2{font-size:30px;line-height:1.08;letter-spacing:-.03em;margin-bottom:10px}.section-head>p:last-child,.seo>p{color:var(--muted);font-size:14px}
-.chip-row{display:flex;gap:8px;overflow:auto;padding-bottom:14px;scrollbar-width:none}.chip-row::-webkit-scrollbar{display:none}
-.chip{flex:0 0 auto;padding:9px 13px;border:1px solid var(--line);background:#fff;border-radius:30px;font-size:12px;font-weight:800;text-align:center}.chip.active{background:var(--pink);color:#fff;border-color:var(--pink)}
 @media(max-width:759px){
   /* Mobile: show every Design Ideas option at once — no horizontal scrolling. */
-  .chip-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;overflow:visible;padding-bottom:10px;width:100%;}
-  .chip{min-width:0;width:100%;padding:10px 6px;font-size:11px;line-height:1.15;white-space:normal;}
 }
 .design-feature{background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);margin-top:8px}.design-feature img{width:100%;aspect-ratio:4/3;object-fit:cover}.design-feature>div{padding:18px}.design-feature h3{font-size:22px;line-height:1.15;margin-bottom:12px}.text-link{font-size:12px;font-weight:900;color:var(--pink)}
 .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.image-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.07)}.image-card img{aspect-ratio:1/1;object-fit:cover}.image-card span{display:block;padding:12px;font-size:12px;font-weight:900}
@@ -645,14 +641,6 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
 }
 
 /* V20 DESIGN IDEAS NAV + IMAGE CTA UPDATE */
-.design-tabs-section{background:var(--cream);padding:22px 18px 10px;border-bottom:1px solid var(--line)}
-.design-tabs-wrap{max-width:1280px;margin:0 auto}
-.design-tabs-title{margin-bottom:14px}
-.design-tabs-title .eyebrow{margin-bottom:5px}
-.design-tabs-title h1,.design-tabs-title h2{font-size:28px;line-height:1.05;margin:0}
-.design-tabs-title h1 span,.design-tabs-title h2 span{color:#e2c37e}
-.design-tabs{margin:0;padding-bottom:2px}
-.design-tabs .chip{font-size:11px;display:inline-flex;align-items:center;justify-content:center;gap:7px;white-space:nowrap}.design-chip-icon{width:17px;height:17px;flex:0 0 17px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.design-tabs .chip span{display:inline-block}
 .design-gallery-section{padding-top:28px}
 .design-gallery-section .section-head{margin-bottom:16px}
 .gallery-card>.gallery-image-wrap{padding:0}
@@ -663,18 +651,11 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
 .gallery-quote:hover{background:#a90048}
 .gallery-card>div:not(.gallery-image-wrap){min-height:92px;display:flex;flex-direction:column;justify-content:center}
 @media(max-width:759px){
-  .design-tabs-section{padding:18px 14px 8px}
-  .design-tabs-title h1{font-size:24px}
-  .design-tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
-  .design-tabs .chip{padding:9px 5px;min-height:38px;display:flex;align-items:center;justify-content:center;gap:5px}.design-chip-icon{width:16px;height:16px;flex-basis:16px}.design-tabs .chip span{line-height:1.15}
   .design-gallery-section{padding:24px 18px 40px}
   .design-gallery-section .section-head h2{font-size:26px}
   .gallery-quote{left:8px;right:8px;bottom:8px;font-size:9px;min-height:38px}
 }
 @media(min-width:760px){
-  .design-tabs-section{padding:26px 22px 12px}
-  .design-tabs{display:flex;flex-wrap:wrap;overflow:visible}
-  .design-tabs .chip{min-width:auto}
   .gallery-image-wrap>img{aspect-ratio:4/3}
 }
 
@@ -734,330 +715,258 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
 .bathroom-gallery .gallery-image-wrap>img{aspect-ratio:4/5;object-fit:cover}
 
 /* Trust, privacy and conversion UX */
-.about-hero{padding-top:100px}.about-trust-grid,.about-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}.about-trust-grid article,.about-service-grid article,.trust-note{background:#faf6f8;border:1px solid #eadde4;border-radius:14px;padding:22px}.about-trust-grid strong{font-size:17px}.about-trust-grid p,.about-service-grid p,.trust-note p{color:#554b52;line-height:1.7}.about-service-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.about-service-grid article span{display:inline-flex;width:34px;height:34px;border-radius:50%;align-items:center;justify-content:center;background:#f2d8e3;color:#8c174e;font-weight:800}.about-service-grid h3{margin:16px 0 7px}.about-process .detail-list{margin-top:28px}.gallery-disclosure{margin-top:12px!important;padding:12px 14px;background:#faf6f8;border-left:3px solid #c90055;border-radius:7px;font-size:13px!important;color:#554b52!important}.privacy-settings-button{font:inherit;cursor:pointer;position:fixed;left:14px;bottom:14px;z-index:1100;padding:8px 11px;border:1px solid #cdbbc5;border-radius:999px;background:#fff;color:#6f1641;font-size:11px;text-decoration:none;box-shadow:0 3px 12px rgba(0,0,0,.08)}.linva-consent-banner{position:fixed;left:14px;right:14px;bottom:14px;z-index:1200;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 18px;background:#fff;border:1px solid #dfcfd7;border-radius:14px;box-shadow:0 10px 35px rgba(0,0,0,.16);color:#3f343a}.linva-consent-banner p{margin:5px 0 0;font-size:13px;line-height:1.5;color:#5d5259}.linva-consent-actions{display:flex;gap:8px;flex:0 0 auto}.linva-consent-actions button{border:1px solid #cdbbc5;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;cursor:pointer}.linva-consent-actions .primary{background:#c90055;color:#fff;border-color:#c90055}.thankyou-page{max-width:760px;margin:0 auto;padding:140px 24px;text-align:center}.thankyou-page h1{font-size:clamp(38px,7vw,64px);line-height:1.05;margin:0 0 18px}.thankyou-page p{font-size:17px;line-height:1.7;color:#554b52}.thankyou-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.thankyou-actions .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid #cdbbc5;border-radius:8px;text-decoration:none;color:#6f1641}.thankyou-actions .btn.primary{background:#c90055;color:#fff;border-color:#c90055}@media(max-width:800px){.about-trust-grid,.about-service-grid{grid-template-columns:1fr 1fr}.linva-consent-banner{align-items:flex-start;flex-direction:column}.linva-consent-actions{width:100%}.linva-consent-actions button{flex:1}}@media(max-width:520px){.about-trust-grid,.about-service-grid{grid-template-columns:1fr}.about-hero{padding-top:75px}.linva-consent-banner{left:10px;right:10px;bottom:10px}.privacy-settings-button{left:auto;right:10px;bottom:10px}}
-
-/* V73 — Design Ideas category icons + mobile footer polish */
-.design-tabs .chip .design-chip-icon{
-  fill:none !important;
-  stroke-width:2 !important;
-  stroke-linecap:round !important;
-  stroke-linejoin:round !important;
-  width:22px !important;
-  height:22px !important;
-  flex:0 0 22px !important;
-  padding:3px !important;
-  border-radius:7px;
-  box-sizing:border-box;
-  background:rgba(0,0,0,.035);
-}
-.design-tabs .chip:nth-child(1) .design-chip-icon{stroke:#d99b18 !important;background:rgba(217,155,24,.12)}
-.design-tabs .chip:nth-child(2) .design-chip-icon{stroke:#7b2d67 !important;background:rgba(123,45,103,.10)}
-.design-tabs .chip:nth-child(3) .design-chip-icon{stroke:#c90055 !important;background:rgba(201,0,85,.09)}
-.design-tabs .chip:nth-child(4) .design-chip-icon{stroke:#168a8a !important;background:rgba(22,138,138,.10)}
-.design-tabs .chip:nth-child(5) .design-chip-icon{stroke:#d48619 !important;background:rgba(212,134,25,.12)}
-.design-tabs .chip:nth-child(6) .design-chip-icon{stroke:#4169a1 !important;background:rgba(65,105,161,.10)}
-.design-tabs .chip:nth-child(7) .design-chip-icon{stroke:#e06b3c !important;background:rgba(224,107,60,.10)}
-.design-tabs .chip:nth-child(8) .design-chip-icon{stroke:#8a4fb0 !important;background:rgba(138,79,176,.10)}
-.design-tabs .chip:nth-child(9) .design-chip-icon{stroke:#3b9270 !important;background:rgba(59,146,112,.10)}
-.design-tabs .chip.active .design-chip-icon{
-  stroke:#fff !important;
-  background:rgba(255,255,255,.13) !important;
-}
-
-.site-footer{
-  background:linear-gradient(145deg,#241b22 0%,#2d1d2a 100%);
-  border-top:3px solid rgba(201,0,85,.45);
-}
-.site-footer .footer-brand{
-  position:relative;
-}
-.site-footer .footer-logo-link{
-  background:#fff;
-  border-radius:14px;
-  padding:9px 14px;
-  box-shadow:0 10px 28px rgba(0,0,0,.18);
-  border:1px solid rgba(255,255,255,.8);
-}
-.site-footer .footer-brand img{
-  width:220px !important;
-  max-width:100%;
-  max-height:none !important;
-  height:auto !important;
-}
-.footer-brand p:first-of-type{
-  margin-top:16px;
-  font-size:14px;
-  color:#e5dbe1;
-}
-.footer-contact{
-  background:rgba(255,255,255,.035);
-  border:1px solid rgba(255,255,255,.10);
-  border-radius:18px;
-  padding:20px;
-}
-.footer-contact h2{
-  margin-bottom:20px;
-}
-.footer-contact-item{
-  background:rgba(255,255,255,.045);
-  border:1px solid rgba(255,255,255,.07);
-  border-radius:11px;
-  padding:10px 11px;
-  margin-bottom:9px;
-}
-.footer-contact-item span{color:#b9aab3}
-.footer-contact-item a{font-size:13px}
-.footer-whatsapp-link img{width:20px !important;height:20px !important}
-.footer-cta{margin-top:12px;padding:13px 19px;border-radius:11px}
-.footer-locations{padding-top:4px}
-.footer-location-heading h2::after{
-  content:"";
-  display:block;
-  width:42px;
-  height:3px;
-  border-radius:3px;
-  background:#e2c37e;
-  margin-top:8px;
-}
-@media(max-width:759px){
-  .design-tabs .chip .design-chip-icon{
-    width:21px !important;
-    height:21px !important;
-    flex-basis:21px !important;
-  }
-  .site-footer{padding-top:34px}
-  .site-footer .footer-logo-link{padding:8px 12px;border-radius:13px}
-  .site-footer .footer-brand img{width:205px !important}
-  .footer-brand p:first-of-type{font-size:13px;margin-top:14px}
-  .footer-contact-wrap{gap:24px}
-  .footer-contact{padding:16px;border-radius:16px}
-  .footer-contact h2{font-size:20px;margin-bottom:15px}
-  .footer-contact-item{grid-template-columns:78px 1fr;padding:9px 10px}
-}
+.about-hero{padding-top:100px}.about-trust-grid,.about-service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}.about-trust-grid article,.about-service-grid article,.trust-note{background:#faf6f8;border:1px solid #eadde4;border-radius:14px;padding:22px}.about-trust-grid strong{font-size:17px}.about-trust-grid p,.about-service-grid p,.trust-note p{color:#554b52;line-height:1.7}.about-service-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.about-service-grid article span{display:inline-flex;width:34px;height:34px;border-radius:50%;align-items:center;justify-content:center;background:#f2d8e3;color:#8c174e;font-weight:800}.about-service-grid h3{margin:16px 0 7px}.about-process .detail-list{margin-top:28px}.gallery-disclosure{margin-top:12px!important;padding:12px 14px;background:#faf6f8;border-left:3px solid #c90055;border-radius:7px;font-size:13px!important;color:#554b52!important}.linva-consent-banner{position:fixed;left:14px;right:14px;bottom:14px;z-index:1200;display:flex;align-items:center;justify-content:space-between;gap:18px;padding:16px 18px;background:#fff;border:1px solid #dfcfd7;border-radius:14px;box-shadow:0 10px 35px rgba(0,0,0,.16);color:#3f343a}.linva-consent-banner p{margin:5px 0 0;font-size:13px;line-height:1.5;color:#5d5259}.linva-consent-actions{display:flex;gap:8px;flex:0 0 auto}.linva-consent-actions button{border:1px solid #cdbbc5;background:#fff;border-radius:8px;padding:10px 12px;font-weight:700;cursor:pointer}.linva-consent-actions .primary{background:#c90055;color:#fff;border-color:#c90055}.thankyou-page{max-width:760px;margin:0 auto;padding:140px 24px;text-align:center}.thankyou-page h1{font-size:clamp(38px,7vw,64px);line-height:1.05;margin:0 0 18px}.thankyou-page p{font-size:17px;line-height:1.7;color:#554b52}.thankyou-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.thankyou-actions .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid #cdbbc5;border-radius:8px;text-decoration:none;color:#6f1641}.thankyou-actions .btn.primary{background:#c90055;color:#fff;border-color:#c90055}@media(max-width:800px){.about-trust-grid,.about-service-grid{grid-template-columns:1fr 1fr}.linva-consent-banner{align-items:flex-start;flex-direction:column}.linva-consent-actions{width:100%}.linva-consent-actions button{flex:1}}@media(max-width:520px){.about-trust-grid,.about-service-grid{grid-template-columns:1fr}.about-hero{padding-top:75px}.linva-consent-banner{left:10px;right:10px;bottom:10px}}
 
 /* =========================================================
-   LINVA V74 — LOGO + TAGLINE VISIBILITY FIX
-   One consistent logo asset is used sitewide. The logo and
-   tagline must remain fully visible on desktop and mobile.
+   V79 — EXACT SUPPLIED LINVA LOGO / CLEAN RESPONSIVE HEADER
+   One logo asset sitewide: images/linva-interiors-logo.webp
+   Original artwork and proportions are preserved.
    ========================================================= */
+
+.site-header{
+  min-height:96px;
+  height:auto;
+  box-sizing:border-box;
+  padding:10px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+
 .site-header .brand{
-  flex:0 0 auto !important;
-  display:flex !important;
-  align-items:center !important;
-  min-width:0 !important;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex:0 1 auto;
+  min-width:0;
+  margin:0;
+  padding:0;
+  line-height:0;
+  overflow:visible;
 }
+
 .site-header .brand img{
-  display:block !important;
-  width:clamp(180px,19vw,220px) !important;
-  height:auto !important;
-  aspect-ratio:500 / 140 !important;
-  max-width:none !important;
-  object-fit:contain !important;
-  object-position:center center !important;
+  display:block;
+  width:330px;
+  height:auto;
+  max-width:100%;
+  max-height:none;
+  object-fit:contain;
+  object-position:left center;
+  flex:0 1 auto;
 }
+
+.site-header .menu-btn,
+.site-header #menuBtn{
+  flex:0 0 42px;
+  width:42px;
+  height:42px;
+  margin:0;
+}
+
 .site-footer .footer-logo-link{
-  display:inline-flex !important;
-  align-items:center !important;
-  justify-content:center !important;
-  overflow:visible !important;
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  padding:0;
+  margin:0;
+  line-height:0;
+  background:transparent;
+  overflow:visible;
 }
+
 .site-footer .footer-brand img{
-  display:block !important;
-  width:250px !important;
-  height:auto !important;
-  aspect-ratio:500 / 140 !important;
-  max-width:100% !important;
-  max-height:none !important;
-  object-fit:contain !important;
-  object-position:center center !important;
+  display:block;
+  width:300px;
+  height:auto;
+  max-width:100%;
+  max-height:none;
+  object-fit:contain;
+  object-position:left center;
+}
+
+@media (max-width: 767px){
+  .site-header{
+    min-height:96px;
+    padding:8px 10px 8px 0;
+    gap:8px;
+  }
+
+  .site-header .brand{
+    flex:1 1 auto;
+    min-width:0;
+    max-width:calc(100vw - 58px);
+  }
+
+  .site-header .brand img{
+    width:245px;
+    max-width:100%;
+    height:auto;
+  }
+
+  .site-header .menu-btn,
+  .site-header #menuBtn{
+    flex:0 0 42px;
+    width:42px;
+    height:42px;
+  }
+
+  .site-footer .footer-brand img{
+    width:270px;
+    max-width:100%;
+    height:auto;
+  }
+}
+
+@media (max-width: 380px){
+  .site-header .brand img{
+    width:225px;
+  }
+}
+
+/* V84 — Premium 3D Design Ideas category tabs
+   Clean replacement for all previous chip/icon styling. */
+.design-tabs-section{
+  padding:26px 22px 16px;
+}
+.design-tabs{
+  display:grid;
+  grid-template-columns:repeat(9,minmax(0,1fr));
+  gap:12px;
+  width:100%;
+  margin:0;
+  padding:0 0 8px;
+  overflow:visible;
+}
+.design-tabs .chip{
+  position:relative;
+  min-width:0;
+  width:100%;
+  min-height:142px;
+  padding:14px 8px 13px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  box-sizing:border-box;
+  border:1px solid rgba(73,35,63,.13);
+  border-radius:18px;
+  background:linear-gradient(145deg,#ffffff 0%,#fbf9fb 100%);
+  color:#2b1726;
+  text-decoration:none;
+  text-align:center;
+  font-size:13px;
+  line-height:1.15;
+  font-weight:850;
+  box-shadow:0 8px 18px rgba(50,20,42,.10),0 2px 4px rgba(50,20,42,.07);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.design-tabs .chip:hover{
+  transform:translateY(-4px);
+  border-color:rgba(201,0,85,.28);
+  box-shadow:0 14px 26px rgba(50,20,42,.15),0 4px 7px rgba(50,20,42,.08);
+}
+.design-tabs .chip:active{
+  transform:translateY(-1px) scale(.985);
+}
+.design-tabs .design-chip-icon{
+  width:68px !important;
+  height:68px !important;
+  flex:0 0 68px !important;
+  padding:15px !important;
+  box-sizing:border-box;
+  border-radius:50%;
+  display:block;
+  color:#fff;
+  fill:none !important;
+  stroke:#fff !important;
+  stroke-width:2.35 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+  filter:drop-shadow(0 3px 2px rgba(0,0,0,.18));
+  box-shadow:inset 0 2px 4px rgba(255,255,255,.5),inset 0 -5px 8px rgba(0,0,0,.22),0 7px 12px rgba(45,15,38,.20);
+}
+.design-tabs .chip:nth-child(1) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
+}
+.design-tabs .chip:nth-child(2) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#b968a2 0%,#7b1f61 43%,#4d1244 100%);
+}
+.design-tabs .chip:nth-child(3) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ffd36e 0%,#d89a24 43%,#9b6410 100%);
+}
+.design-tabs .chip:nth-child(4) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
+}
+.design-tabs .chip:nth-child(5) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#b968a2 0%,#7b1f61 43%,#4d1244 100%);
+}
+.design-tabs .chip:nth-child(6) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ffd36e 0%,#d89a24 43%,#9b6410 100%);
+}
+.design-tabs .chip:nth-child(7) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
+}
+.design-tabs .chip:nth-child(8) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#b968a2 0%,#7b1f61 43%,#4d1244 100%);
+}
+.design-tabs .chip:nth-child(9) .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ffd36e 0%,#d89a24 43%,#9b6410 100%);
+}
+.design-tabs .chip.active{
+  background:linear-gradient(145deg,#fff 0%,#fbf5f8 100%);
+  color:#c90055;
+  border-color:rgba(201,0,85,.42);
+  box-shadow:0 12px 24px rgba(201,0,85,.15),0 3px 6px rgba(50,20,42,.08);
+}
+.design-tabs .chip.active .design-chip-icon{
+  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
+}
+.design-tabs .chip span{
+  display:block;
+  line-height:1.15;
+}
+@media(max-width:1100px) and (min-width:760px){
+  .design-tabs{grid-template-columns:repeat(5,minmax(0,1fr));}
 }
 @media(max-width:759px){
-  .site-header .brand img{
-    width:200px !important;
-    height:auto !important;
-    aspect-ratio:500 / 140 !important;
+  .design-tabs-section{
+    padding:18px 14px 10px;
   }
-  .site-footer .footer-brand img{
-    width:230px !important;
-    height:auto !important;
-    aspect-ratio:500 / 140 !important;
+  .design-tabs{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:9px;
+    padding-bottom:8px;
+  }
+  .design-tabs .chip{
+    min-height:116px;
+    padding:10px 5px 9px;
+    gap:7px;
+    border-radius:16px;
+    font-size:11px;
+  }
+  .design-tabs .design-chip-icon{
+    width:54px !important;
+    height:54px !important;
+    flex-basis:54px !important;
+    padding:12px !important;
+    stroke-width:2.25 !important;
   }
 }
 @media(max-width:380px){
-  .site-header .brand img{
-    width:185px !important;
+  .design-tabs{
+    gap:7px;
   }
-}
-
-
-/* =========================================================
-   LINVA V75 — FULL LOGO SCALE + LEFT ALIGNMENT
-   The exact logo artwork is cropped to its visible bounds so
-   the mark, name and tagline use the available header space.
-   ========================================================= */
-.site-header .brand img{
-  object-position:left center !important;
-}
-@media screen and (min-width:760px){
-  .site-header{
-    padding-left:24px !important;
-    padding-right:32px !important;
+  .design-tabs .chip{
+    min-height:108px;
+    font-size:10.5px;
   }
-  .site-header .brand img{
-    width:270px !important;
-    height:auto !important;
-    max-width:none !important;
-  }
-}
-@media screen and (max-width:759px){
-  .site-header{
-    padding-left:0 !important;
-    padding-right:14px !important;
-    gap:8px !important;
-  }
-  .site-header .brand{
-    flex:1 1 auto !important;
-    min-width:0 !important;
-    overflow:visible !important;
-  }
-  .site-header .brand img{
-    width:300px !important;
-    max-width:100% !important;
-    height:auto !important;
-    object-position:left center !important;
-  }
-  .site-header .menu-btn,
-  #menuBtn{
-    flex:0 0 44px !important;
-  }
-}
-@media screen and (max-width:430px){
-  .site-header .brand img{
-    width:285px !important;
-  }
-}
-@media screen and (max-width:380px){
-  .site-header{
-    padding-left:0 !important;
-    padding-right:10px !important;
-  }
-  .site-header .brand img{
-    width:270px !important;
-  }
-}
-.site-footer .footer-brand img{
-  width:280px !important;
-  height:auto !important;
-  max-width:100% !important;
-}
-@media screen and (max-width:759px){
-  .site-footer .footer-brand img{
-    width:250px !important;
-  }
-}
-
-/* =========================================================
-   LINVA V76 — EXACT LOGO ARTWORK / TRUE VISIBLE BOUNDS
-   Uses the supplied logo artwork cropped only to its transparent
-   bounds. No logo text, colours or tagline have been altered.
-   ========================================================= */
-.site-header .brand{
-  overflow:visible !important;
-}
-.site-header .brand img{
-  display:block !important;
-  object-fit:contain !important;
-  object-position:left center !important;
-  width:270px !important;
-  height:auto !important;
-  max-width:100% !important;
-  max-height:none !important;
-}
-@media screen and (max-width:759px){
-  .site-header{
-    padding-left:0 !important;
-    padding-right:10px !important;
-    gap:8px !important;
-  }
-  .site-header .brand{
-    flex:1 1 auto !important;
-    min-width:0 !important;
-    height:auto !important;
-  }
-  .site-header .brand img{
-    width:270px !important;
-    max-width:100% !important;
-    height:auto !important;
-  }
-}
-@media screen and (max-width:380px){
-  .site-header .brand img{
-    width:260px !important;
-  }
-}
-.site-footer .footer-brand img{
-  width:280px !important;
-  height:auto !important;
-  max-width:100% !important;
-  max-height:none !important;
-}
-@media screen and (max-width:759px){
-  .site-footer .footer-brand img{
-    width:250px !important;
-  }
-}
-
-
-/* V77: exact supplied Linva Interiors logo — preserve artwork and proportions */
-.site-header .logo img,
-.site-header .brand img,
-header .logo img,
-header .brand img,
-.footer-logo img,
-footer .logo img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 72px;
-  object-fit: contain;
-  object-position: left center;
-  display: block;
-}
-
-@media (max-width: 767px) {
-  .site-header .logo,
-  .site-header .brand,
-  header .logo,
-  header .brand {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    min-width: 0;
-    flex: 1 1 auto;
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .site-header .logo img,
-  .site-header .brand img,
-  header .logo img,
-  header .brand img {
-    width: min(78vw, 430px);
-    max-width: calc(100vw - 92px);
-    max-height: 82px;
-    height: auto;
-    object-fit: contain;
-    object-position: left center;
-  }
-}
-
-@media (min-width: 768px) {
-  .site-header .logo img,
-  .site-header .brand img,
-  header .logo img,
-  header .brand img {
-    width: min(360px, 32vw);
-    max-height: 78px;
-    height: auto;
+  .design-tabs .design-chip-icon{
+    width:50px !important;
+    height:50px !important;
+    flex-basis:50px !important;
+    padding:11px !important;
   }
 }

@@ -78,11 +78,11 @@
   function updateBanner(){
     const b=document.getElementById('linvaConsentBanner'); if(b) b.remove();
   }
-  window.LinvaAnalytics=Object.freeze({event,showPrivacySettings:()=>{try{localStorage.removeItem(CONSENT_KEY)}catch(_){ } banner();}});
+  window.LinvaAnalytics=Object.freeze({event});
   document.addEventListener('click',(e)=>{
     const link=e.target.closest&&e.target.closest('a[href*="wa.me/"],a[href*="whatsapp"]');
     if(link) event('whatsapp_click',{link_text:(link.textContent||'').trim().slice(0,80)});
-    if(e.target.closest&&e.target.closest('#privacySettings')){e.preventDefault();window.LinvaAnalytics.showPrivacySettings();}
+    
   },{passive:false});
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',banner,{once:true}); else banner();
 })();

@@ -41,3 +41,11 @@ GOOGLE ADS / ANALYTICS NOTE (2 Sep 2026)
 - Direct Google Ads conversion ID/labels are intentionally blank. Enter the real AW- conversion ID and conversion-action labels supplied by Google Ads; do not invent them.
 - Optional analytics is consent-controlled.
 - Design Ideas images are labelled as concepts/inspiration and are not represented as completed Linva Interiors projects unless explicitly stated.
+
+
+CRM V87 HARDENING
+- CRM UI requires Supabase Auth before querying leads.
+- CRM has no browser-side DELETE action.
+- Lead editing and detailed database error diagnostics added.
+- Recommended RLS policy baseline is included at crm/SUPABASE-RLS-HARDENING.sql.
+- RLS changes are not applied by the static website; review and execute the SQL in Supabase SQL Editor.
