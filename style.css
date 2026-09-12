@@ -888,3 +888,70 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
     width:185px !important;
   }
 }
+
+
+/* =========================================================
+   LINVA V75 — FULL LOGO SCALE + LEFT ALIGNMENT
+   The exact logo artwork is cropped to its visible bounds so
+   the mark, name and tagline use the available header space.
+   ========================================================= */
+.site-header .brand img{
+  object-position:left center !important;
+}
+@media screen and (min-width:760px){
+  .site-header{
+    padding-left:24px !important;
+    padding-right:32px !important;
+  }
+  .site-header .brand img{
+    width:270px !important;
+    height:auto !important;
+    max-width:none !important;
+  }
+}
+@media screen and (max-width:759px){
+  .site-header{
+    padding-left:0 !important;
+    padding-right:14px !important;
+    gap:8px !important;
+  }
+  .site-header .brand{
+    flex:1 1 auto !important;
+    min-width:0 !important;
+    overflow:visible !important;
+  }
+  .site-header .brand img{
+    width:300px !important;
+    max-width:100% !important;
+    height:auto !important;
+    object-position:left center !important;
+  }
+  .site-header .menu-btn,
+  #menuBtn{
+    flex:0 0 44px !important;
+  }
+}
+@media screen and (max-width:430px){
+  .site-header .brand img{
+    width:285px !important;
+  }
+}
+@media screen and (max-width:380px){
+  .site-header{
+    padding-left:0 !important;
+    padding-right:10px !important;
+  }
+  .site-header .brand img{
+    width:270px !important;
+  }
+}
+.site-footer .footer-brand img{
+  width:280px !important;
+  height:auto !important;
+  max-width:100% !important;
+}
+@media screen and (max-width:759px){
+  .site-footer .footer-brand img{
+    width:250px !important;
+  }
+}
