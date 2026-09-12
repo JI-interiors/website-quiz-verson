@@ -1006,3 +1006,58 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
     width:250px !important;
   }
 }
+
+
+/* V77: exact supplied Linva Interiors logo — preserve artwork and proportions */
+.site-header .logo img,
+.site-header .brand img,
+header .logo img,
+header .brand img,
+.footer-logo img,
+footer .logo img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 72px;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .site-header .logo,
+  .site-header .brand,
+  header .logo,
+  header .brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .site-header .logo img,
+  .site-header .brand img,
+  header .logo img,
+  header .brand img {
+    width: min(78vw, 430px);
+    max-width: calc(100vw - 92px);
+    max-height: 82px;
+    height: auto;
+    object-fit: contain;
+    object-position: left center;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header .logo img,
+  .site-header .brand img,
+  header .logo img,
+  header .brand img {
+    width: min(360px, 32vw);
+    max-height: 78px;
+    height: auto;
+  }
+}
