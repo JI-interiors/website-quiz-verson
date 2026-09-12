@@ -42,6 +42,7 @@
         <button class="small" data-action="edit" data-id="${id}">Edit</button>
         <button class="small" data-action="done" data-id="${id}">Done</button>
         <button class="small" data-action="wa" data-id="${id}">WhatsApp</button>
+        <button class="small danger" data-action="delete" data-id="${id}">Delete</button>
       </div></td>
     </tr>`;
   }
@@ -94,6 +95,19 @@
     if (error) { console.error('[Linva CRM] complete failed', error); showToast(`Could not update lead: ${errorText(error)}`, 'error'); return; }
     showToast('Lead marked completed.', 'success'); await load();
   }
+  async function deleteLead(id) {
+    const c = leads.find(x => String(x.id) === String(id)); if (!c) return;
+    const ok = window.confirm(`Delete this lead permanently?\n\nCustomer: ${c.name || 'Unknown'}\nWhatsApp: ${c.phone || '—'}\n\nThis cannot be undone.`);
+    if (!ok) return;
+    const { error } = await client.from('leads').delete().eq('id', id);
+    if (error) {
+      console.error('[Linva CRM] delete failed', error);
+      showToast(`Could not delete lead: ${errorText(error)}`, 'error');
+      return;
+    }
+    showToast('Lead deleted permanently.', 'success');
+    await load();
+  }
   function wa(id) {
     const c = leads.find(x => String(x.id) === String(id)); if (!c) return;
     let p = String(c.phone || '').replace(/\D/g,''); if (p.length === 10) p = '91' + p;
@@ -117,7 +131,7 @@
     $('close').onclick = () => $('modal').classList.add('hidden'); $('modal').onclick = e => { if(e.target.id === 'modal') $('modal').classList.add('hidden'); };
     $('editClose').onclick = () => $('editModal').classList.add('hidden'); $('editModal').onclick = e => { if(e.target.id === 'editModal') $('editModal').classList.add('hidden'); };
     $('editForm').onsubmit = saveEdit; $('add').onclick = addLead; $('logout').onclick = async () => { await client.auth.signOut(); location.reload(); };
-    document.addEventListener('click', e => { const b=e.target.closest('[data-action]'); if(!b) return; const id=b.dataset.id; if(b.dataset.action==='view') openLead(id); if(b.dataset.action==='edit') editLead(id); if(b.dataset.action==='done') done(id); if(b.dataset.action==='wa') wa(id); });
+    document.addEventListener('click', e => { const b=e.target.closest('[data-action]'); if(!b) return; const id=b.dataset.id; if(b.dataset.action==='view') openLead(id); if(b.dataset.action==='edit') editLead(id); if(b.dataset.action==='done') done(id); if(b.dataset.action==='wa') wa(id); if(b.dataset.action==='delete') deleteLead(id); });
   }
   (async () => {
     const { data: { session }, error } = await client.auth.getSession();

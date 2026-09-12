@@ -33,3 +33,12 @@ with check (auth.uid() is not null);
 
 -- No DELETE policy is intentionally created.
 -- Keep service_role/server-side administration separate from browser code.
+
+
+-- V89: allow authenticated CRM users to permanently delete leads.
+-- Run this only if you want the Delete button in the CRM to perform a hard delete.
+create policy "authenticated_delete_leads"
+on public.leads
+for delete
+to authenticated
+using (true);
