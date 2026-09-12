@@ -106,6 +106,7 @@
       return;
     }
     showToast('Lead deleted permanently.', 'success');
+    $('modal').classList.add('hidden'); $('editModal').classList.add('hidden');
     await load();
   }
   function wa(id) {
@@ -128,9 +129,9 @@
   function bind() {
     document.querySelectorAll('.nav button').forEach(b => b.onclick = () => { document.querySelectorAll('.nav button').forEach(x => x.classList.remove('active')); b.classList.add('active'); ['dashboard','leads','followups'].forEach(v => $(v).classList.add('hidden')); const v=b.dataset.view; $(v).classList.remove('hidden'); $('title').textContent=v==='dashboard'?'Lead Dashboard':v==='leads'?'Customers & Leads':'Follow-Ups'; render(); });
     ['search','source','status','range','fp'].forEach(id => $(id).addEventListener('input', render));
-    $('close').onclick = () => $('modal').classList.add('hidden'); $('modal').onclick = e => { if(e.target.id === 'modal') $('modal').classList.add('hidden'); };
+    $('close').onclick = () => $('modal').classList.add('hidden'); $('modal').onclick = e => { if(e.target.id === 'modal') $('modal').classList.add('hidden'); }; $('modalDelete').onclick = () => { const id = $('modal').dataset.id; if (id) deleteLead(id); };
     $('editClose').onclick = () => $('editModal').classList.add('hidden'); $('editModal').onclick = e => { if(e.target.id === 'editModal') $('editModal').classList.add('hidden'); };
-    $('editForm').onsubmit = saveEdit; $('add').onclick = addLead; $('logout').onclick = async () => { await client.auth.signOut(); location.reload(); };
+    $('editForm').onsubmit = saveEdit; $('editCancel').onclick = () => $('editModal').classList.add('hidden'); $('editDelete').onclick = () => { const id = $('editId').value; if (id) deleteLead(id); }; $('add').onclick = addLead; $('logout').onclick = async () => { await client.auth.signOut(); location.reload(); };
     document.addEventListener('click', e => { const b=e.target.closest('[data-action]'); if(!b) return; const id=b.dataset.id; if(b.dataset.action==='view') openLead(id); if(b.dataset.action==='edit') editLead(id); if(b.dataset.action==='done') done(id); if(b.dataset.action==='wa') wa(id); if(b.dataset.action==='delete') deleteLead(id); });
   }
   (async () => {

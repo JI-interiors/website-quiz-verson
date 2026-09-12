@@ -3,3 +3,8 @@
 /* Destructive CRM action */
 button.danger { color:#a11; border-color:#e4b8b8; }
 button.danger:hover { background:#fff0f0; }
+
+/* V90: prominent delete controls */
+.lead-modal-actions{display:flex;justify-content:flex-end;margin-top:16px;padding-top:14px;border-top:1px solid var(--line)}
+.danger{border-color:#e5b9c2!important;color:var(--error)!important}
+.danger:hover{background:#fff0f3!important;border-color:var(--error)!important;color:var(--error)!important}
