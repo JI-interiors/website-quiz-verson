@@ -955,3 +955,54 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
     width:250px !important;
   }
 }
+
+/* =========================================================
+   LINVA V76 — EXACT LOGO ARTWORK / TRUE VISIBLE BOUNDS
+   Uses the supplied logo artwork cropped only to its transparent
+   bounds. No logo text, colours or tagline have been altered.
+   ========================================================= */
+.site-header .brand{
+  overflow:visible !important;
+}
+.site-header .brand img{
+  display:block !important;
+  object-fit:contain !important;
+  object-position:left center !important;
+  width:270px !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:none !important;
+}
+@media screen and (max-width:759px){
+  .site-header{
+    padding-left:0 !important;
+    padding-right:10px !important;
+    gap:8px !important;
+  }
+  .site-header .brand{
+    flex:1 1 auto !important;
+    min-width:0 !important;
+    height:auto !important;
+  }
+  .site-header .brand img{
+    width:270px !important;
+    max-width:100% !important;
+    height:auto !important;
+  }
+}
+@media screen and (max-width:380px){
+  .site-header .brand img{
+    width:260px !important;
+  }
+}
+.site-footer .footer-brand img{
+  width:280px !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:none !important;
+}
+@media screen and (max-width:759px){
+  .site-footer .footer-brand img{
+    width:250px !important;
+  }
+}
