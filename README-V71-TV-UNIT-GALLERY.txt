@@ -1,0 +1,1 @@
+V71 update: replaced the TV Unit gallery placeholders with 8 supplied, distinct TV unit design images. Images are labeled as design concepts/inspiration and are not represented as completed Linva Interiors projects. Main Design Ideas TV Unit thumbnail now uses tv-unit-01.webp. No other site sections were intentionally changed.
