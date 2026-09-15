@@ -827,151 +827,29 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
   }
 }
 
-/* V84 — Premium 3D Design Ideas category tabs
-   Clean replacement for all previous chip/icon styling. */
-.design-tabs-section{
-  padding:26px 22px 16px;
-}
-.design-tabs{
-  display:grid;
-  grid-template-columns:repeat(9,minmax(0,1fr));
-  gap:12px;
-  width:100%;
-  margin:0;
-  padding:0 0 8px;
-  overflow:visible;
-}
-.design-tabs .chip{
-  position:relative;
-  min-width:0;
-  width:100%;
-  min-height:142px;
-  padding:14px 8px 13px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
-  gap:10px;
-  box-sizing:border-box;
-  border:1px solid rgba(73,35,63,.13);
-  border-radius:18px;
-  background:linear-gradient(145deg,#ffffff 0%,#fbf9fb 100%);
-  color:#2b1726;
-  text-decoration:none;
-  text-align:center;
-  font-size:13px;
-  line-height:1.15;
-  font-weight:850;
-  box-shadow:0 8px 18px rgba(50,20,42,.10),0 2px 4px rgba(50,20,42,.07);
-  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
-}
-.design-tabs .chip:hover{
-  transform:translateY(-4px);
-  border-color:rgba(201,0,85,.28);
-  box-shadow:0 14px 26px rgba(50,20,42,.15),0 4px 7px rgba(50,20,42,.08);
-}
-.design-tabs .chip:active{
-  transform:translateY(-1px) scale(.985);
-}
-.design-tabs .design-chip-icon{
-  width:68px !important;
-  height:68px !important;
-  flex:0 0 68px !important;
-  padding:15px !important;
-  box-sizing:border-box;
-  border-radius:50%;
-  display:block;
-  color:#fff;
-  fill:none !important;
-  stroke:#fff !important;
-  stroke-width:2.35 !important;
-  stroke-linecap:round !important;
-  stroke-linejoin:round !important;
-  filter:drop-shadow(0 3px 2px rgba(0,0,0,.18));
-  box-shadow:inset 0 2px 4px rgba(255,255,255,.5),inset 0 -5px 8px rgba(0,0,0,.22),0 7px 12px rgba(45,15,38,.20);
-}
-.design-tabs .chip:nth-child(1) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
-}
-.design-tabs .chip:nth-child(2) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#b968a2 0%,#7b1f61 43%,#4d1244 100%);
-}
-.design-tabs .chip:nth-child(3) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ffd36e 0%,#d89a24 43%,#9b6410 100%);
-}
-.design-tabs .chip:nth-child(4) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
-}
-.design-tabs .chip:nth-child(5) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#b968a2 0%,#7b1f61 43%,#4d1244 100%);
-}
-.design-tabs .chip:nth-child(6) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ffd36e 0%,#d89a24 43%,#9b6410 100%);
-}
-.design-tabs .chip:nth-child(7) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
-}
-.design-tabs .chip:nth-child(8) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#b968a2 0%,#7b1f61 43%,#4d1244 100%);
-}
-.design-tabs .chip:nth-child(9) .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ffd36e 0%,#d89a24 43%,#9b6410 100%);
-}
-.design-tabs .chip.active{
-  background:linear-gradient(145deg,#fff 0%,#fbf5f8 100%);
-  color:#c90055;
-  border-color:rgba(201,0,85,.42);
-  box-shadow:0 12px 24px rgba(201,0,85,.15),0 3px 6px rgba(50,20,42,.08);
-}
-.design-tabs .chip.active .design-chip-icon{
-  background:radial-gradient(circle at 30% 22%,#ff79a8 0%,#df0b68 42%,#a6004e 100%);
-}
-.design-tabs .chip span{
-  display:block;
-  line-height:1.15;
-}
-@media(max-width:1100px) and (min-width:760px){
-  .design-tabs{grid-template-columns:repeat(5,minmax(0,1fr));}
-}
-@media(max-width:759px){
-  .design-tabs-section{
-    padding:18px 14px 10px;
-  }
-  .design-tabs{
-    grid-template-columns:repeat(3,minmax(0,1fr));
-    gap:9px;
-    padding-bottom:8px;
-  }
-  .design-tabs .chip{
-    min-height:116px;
-    padding:10px 5px 9px;
-    gap:7px;
-    border-radius:16px;
-    font-size:11px;
-  }
-  .design-tabs .design-chip-icon{
-    width:54px !important;
-    height:54px !important;
-    flex-basis:54px !important;
-    padding:12px !important;
-    stroke-width:2.25 !important;
-  }
-}
-@media(max-width:380px){
-  .design-tabs{
-    gap:7px;
-  }
-  .design-tabs .chip{
-    min-height:108px;
-    font-size:10.5px;
-  }
-  .design-tabs .design-chip-icon{
-    width:50px !important;
-    height:50px !important;
-    flex-basis:50px !important;
-    padding:11px !important;
-  }
-}
+/* V96 — Soft Glassmorphism Design Ideas category tabs
+   Light, premium icon treatment inspired by the selected Option 6 reference. */
+.design-tabs-section{padding:26px 22px 16px}
+.design-tabs{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:12px;width:100%;margin:0;padding:0 0 8px;overflow:visible}
+.design-tabs .chip{position:relative;min-width:0;width:100%;min-height:142px;padding:14px 8px 13px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;box-sizing:border-box;border:1px solid rgba(73,35,63,.11);border-radius:18px;background:rgba(255,255,255,.78);color:#2b1726;text-decoration:none;text-align:center;font-size:13px;line-height:1.15;font-weight:800;box-shadow:0 8px 22px rgba(50,20,42,.07),inset 0 1px 0 rgba(255,255,255,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.design-tabs .chip:hover{transform:translateY(-3px);border-color:rgba(201,0,85,.22);box-shadow:0 12px 26px rgba(50,20,42,.10),inset 0 1px 0 rgba(255,255,255,.95)}
+.design-tabs .chip:active{transform:translateY(-1px) scale(.985)}
+.design-tabs .design-chip-icon{width:64px!important;height:64px!important;flex:0 0 64px!important;padding:16px!important;box-sizing:border-box;border-radius:50%;display:block;fill:none!important;stroke:currentColor!important;stroke-width:1.9!important;stroke-linecap:round!important;stroke-linejoin:round!important;filter:none!important;box-shadow:inset 0 1px 3px rgba(255,255,255,.95),0 5px 14px rgba(50,20,42,.08)!important}
+.design-tabs .chip:nth-child(1) .design-chip-icon{color:#c60058;background:linear-gradient(145deg,rgba(255,221,236,.96),rgba(255,239,246,.72))}
+.design-tabs .chip:nth-child(2) .design-chip-icon{color:#69418e;background:linear-gradient(145deg,rgba(232,219,250,.96),rgba(246,240,252,.72))}
+.design-tabs .chip:nth-child(3) .design-chip-icon{color:#b27a08;background:linear-gradient(145deg,rgba(255,239,198,.96),rgba(255,248,226,.72))}
+.design-tabs .chip:nth-child(4) .design-chip-icon{color:#0086a3;background:linear-gradient(145deg,rgba(213,241,248,.96),rgba(239,250,253,.72))}
+.design-tabs .chip:nth-child(5) .design-chip-icon{color:#c45a82;background:linear-gradient(145deg,rgba(252,223,233,.96),rgba(255,243,247,.72))}
+.design-tabs .chip:nth-child(6) .design-chip-icon{color:#66509d;background:linear-gradient(145deg,rgba(230,224,250,.96),rgba(246,243,253,.72))}
+.design-tabs .chip:nth-child(7) .design-chip-icon{color:#3c8b4f;background:linear-gradient(145deg,rgba(218,242,220,.96),rgba(241,251,242,.72))}
+.design-tabs .chip:nth-child(8) .design-chip-icon{color:#d87919;background:linear-gradient(145deg,rgba(255,233,206,.96),rgba(255,247,235,.72))}
+.design-tabs .chip:nth-child(9) .design-chip-icon{color:#0b94a4;background:linear-gradient(145deg,rgba(213,242,246,.96),rgba(240,251,252,.72))}
+.design-tabs .chip.active{background:rgba(255,255,255,.86);color:#c90055;border-color:rgba(201,0,85,.34);box-shadow:0 12px 26px rgba(201,0,85,.10),inset 0 1px 0 rgba(255,255,255,.95)}
+.design-tabs .chip.active .design-chip-icon{color:#c60058;background:linear-gradient(145deg,rgba(255,221,236,.98),rgba(255,239,246,.76))}
+.design-tabs .chip span{display:block;line-height:1.15}
+@media(max-width:1100px) and (min-width:760px){.design-tabs{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:759px){.design-tabs-section{padding:18px 14px 10px}.design-tabs{grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding-bottom:8px}.design-tabs .chip{min-height:116px;padding:10px 5px 9px;gap:7px;border-radius:16px;font-size:11px}.design-tabs .design-chip-icon{width:54px!important;height:54px!important;flex-basis:54px!important;padding:13px!important;stroke-width:1.85!important}}
+@media(max-width:380px){.design-tabs{gap:7px}.design-tabs .chip{min-height:108px;font-size:10.5px}.design-tabs .design-chip-icon{width:50px!important;height:50px!important;flex-basis:50px!important;padding:12px!important}}
 
 
 .thankyou-footer{text-align:center;padding:18px 16px;font-size:12px}.thankyou-footer a{color:inherit;text-decoration:underline;text-underline-offset:3px}
@@ -1050,3 +928,13 @@ h1 em,h2 span{color:#e2c37e;font-style:normal}
   .gallery-lightbox{padding:16px}
   .gallery-lightbox img{max-width:96vw;max-height:84vh}
 }
+/* V97: Individual design category pages use a clean intro instead of repeating the category icon menu. */
+.category-page-intro{padding:22px 22px 10px}
+.category-page-intro .eyebrow{margin-bottom:10px}
+.category-page-intro h1{margin:0;max-width:900px}
+.design-back{display:inline-flex;align-items:center;gap:8px;margin:0 0 24px;padding:9px 14px;border:1px solid rgba(126,27,91,.18);border-radius:999px;background:rgba(255,255,255,.78);color:#5f1a4e;text-decoration:none;font-size:13px;font-weight:700;box-shadow:0 5px 16px rgba(53,17,45,.07);transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.design-back:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(53,17,45,.11);background:#fff}
+.design-back span{font-size:17px;line-height:1}
+@media(min-width:760px){.category-page-intro{padding:28px 32px 14px}.design-back{margin-bottom:28px;font-size:14px}}
+@media(max-width:759px){.category-page-intro{padding:18px 18px 8px}.design-back{margin-bottom:22px;font-size:12px;padding:8px 13px}.category-page-intro h1{font-size:36px;line-height:1.08}}
+
