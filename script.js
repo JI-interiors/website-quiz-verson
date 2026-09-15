@@ -151,3 +151,36 @@
   };
   initDesignCarousels();
 })();
+
+/* V95 — click any design image to open it full-size; CTA remains a separate action. */
+(() => {
+  const initGalleryLightbox = () => {
+    const links = [...document.querySelectorAll('.design-gallery .gallery-image-link')];
+    if (!links.length || document.querySelector('.gallery-lightbox')) return;
+    const box = document.createElement('div');
+    box.className = 'gallery-lightbox';
+    box.setAttribute('role','dialog');
+    box.setAttribute('aria-modal','true');
+    box.setAttribute('aria-label','Design image preview');
+    box.innerHTML = '<button type="button" class="gallery-lightbox-close" aria-label="Close image preview">×</button><img alt=""><div class="gallery-lightbox-caption"></div>';
+    document.body.appendChild(box);
+    const preview = box.querySelector('img');
+    const caption = box.querySelector('.gallery-lightbox-caption');
+    const close = () => { box.classList.remove('open'); document.body.classList.remove('lightbox-open'); preview.removeAttribute('src'); };
+    links.forEach(link => link.addEventListener('click', e => {
+      e.preventDefault();
+      const source = link.querySelector('img');
+      if (!source) return;
+      preview.src = link.href;
+      preview.alt = source.alt || 'Linva Interiors design';
+      caption.textContent = source.alt || '';
+      box.classList.add('open');
+      document.body.classList.add('lightbox-open');
+    }));
+    box.addEventListener('click', e => { if (e.target === box) close(); });
+    close && box.querySelector('.gallery-lightbox-close').addEventListener('click', close);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && box.classList.contains('open')) close(); });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initGalleryLightbox, {once:true});
+  else initGalleryLightbox();
+})();
