@@ -152,7 +152,7 @@
   initDesignCarousels();
 })();
 
-/* V95 — click any design image to open it full-size; CTA remains a separate action. */
+/* V99 — click any design image to open it full-size; CTA remains a separate action. */
 (() => {
   const initGalleryLightbox = () => {
     const links = [...document.querySelectorAll('.design-gallery .gallery-image-link')];

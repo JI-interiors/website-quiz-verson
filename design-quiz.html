@@ -5,7 +5,7 @@
 <title>Design Discovery Quiz | Linva Interiors</title>
 <meta content="Take the Linva Interiors Design Discovery Quiz and share your interior preferences with our design team." name="description"/>
 <link href="https://linvainteriors.in/design-quiz.html" rel="canonical"/>
-<link href="style.css?v=95" rel="stylesheet"/><link href="design-quiz.css" rel="stylesheet"/>
+<link href="style.css?v=99" rel="stylesheet"/><link href="design-quiz.css?v=99" rel="stylesheet"/>
 <meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebPage","name":"Interior Design Quiz | Linva Interiors","description":"Take the Linva Interiors design quiz to explore your interior style, requirements and preferences.","url":"https://linvainteriors.in/design-quiz.html","isPartOf":{"@type":"WebSite","name":"Linva Interiors","url":"https://linvainteriors.in/"}}
 </script>
@@ -19,7 +19,7 @@
 <section class="question-card hidden" id="quiz"><div class="progress-head"><span id="stepLabel">Question 1</span><span id="stepCount">1 / 10</span></div><div class="progress"><span id="progress"></span></div><div class="eyebrow" id="eyebrow">DESIGN DISCOVERY</div><h2 id="qTitle"></h2><div class="hint" id="qHint"></div><div class="options" id="options"></div><div class="quiz-actions"><div class="secondary-actions"><button class="skip-btn" id="skip" type="button">Skip</button><button class="back-btn" id="quizBack" type="button">Back</button></div><button class="next-btn" id="next" type="button">Continue →</button></div></section>
 <section class="result-card hidden" id="result"><div class="eyebrow">YOUR LINVA DESIGN PROFILE</div><h2 id="resultTitle">Modern Warm</h2><p class="result-intro" id="resultText"></p><div class="profile" id="profile"></div><a class="wa" id="wa" rel="noopener" target="_blank">Talk to a Linva Designer on WhatsApp →</a><br/><button class="restart" id="restart">Retake the quiz</button></section>
 </main></div>
-<script src="supabase-client.js?v=85"></script><script>
+<script src="supabase-client.js?v=99"></script><script>
 const img=(name)=>'images/quiz/'+name;
 const questions=[
 {id:'project',title:'What are you designing?',hint:'Choose what you want Linva to help you create.',opts:[['home','Complete Home','A full-home interior journey',img('q1-complete-home.webp')],['living','Living Room','A welcoming living space',img('q1-living-room.webp')],['kitchen','Kitchen','Modular kitchen & storage',img('q1-kitchen.webp')],['bedroom','Bedroom','Bedroom, wardrobe & storage',img('q1-bedroom.webp')]]},
@@ -58,4 +58,4 @@ $('restart').onclick=()=>{i=0;answers={};lead={};$('result').classList.add('hidd
 $('leadPhone').addEventListener('input',()=>{$('leadPhone').value=$('leadPhone').value.replace(/\D/g,'').slice(0,10)});
 $('leadName').addEventListener('keydown',e=>{if(e.key==='Enter'){$('leadPhone').focus()}});
 $('leadPhone').addEventListener('keydown',e=>{if(e.key==='Enter')$('start').click()});
-</script><script defer="" src="analytics.js?v=85"></script><footer class="quiz-legal-footer"><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a></footer></body></html>
+</script><script defer="" src="analytics.js?v=99"></script><footer class="quiz-legal-footer"><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-and-conditions.html">Terms &amp; Conditions</a></footer></body></html>
